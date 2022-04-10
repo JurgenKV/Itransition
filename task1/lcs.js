@@ -1,0 +1,1 @@
+function Ch(e){let l=e.reduce((e,l)=>e.length<=l.length?e:l),r=l.length;for(let n=r;n>=0;n--)for(let t=0;t<=r-n;t++){let r=l.substring(t,t+n);if(e.every(e=>~e.indexOf(r)))return r}return""}process.argv.length<3?console.log(""):console.log(Ch(process.argv.slice(2)));
